@@ -1,0 +1,33 @@
+<!DOCTYPE html >
+<head>
+
+<meta charset="UTF-8" />
+ <style type="text/css">
+   #qrcode{
+     
+      margin:0 auto;
+   }
+ </style>
+</head>
+<body>
+<input style="display: none;" id="text" type="text" value="http://1.yangplplok.applinzi.com/fun/index.html" /><br />
+<div id="qrcode"></div>
+
+
+
+</body>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="qrcode.js"></script>
+<script type="text/javascript">
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+  width : 200,
+  height : 200
+});
+
+function makeCode () {    
+  var elText = document.getElementById("text");
+  qrcode.makeCode(elText.value);
+}
+makeCode();
+
+</script>
