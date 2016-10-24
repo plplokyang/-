@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>封龙山景区</title>
+<meta name="viewport" content="width=640,user-scalable=no" />
+<link href="css/index.css" rel="stylesheet" />
+<script src="js/index.js"></script>
+<script>
+window.onload = function(){
+    document.body.style.height=view().h+"px";
+    fnLoad();
+}
+</script>
+</head>
+<body>
+<section class="page pageShow" id="welcome">
+    <section class="scrollWrap">
+            <div class="scenery">
+                <img class="mountain" src="img/mountain.png" />
+            <span class="cloud"></span>
+            <span class="cloud"></span>
+            <span class="cloud"></span>
+            </div>
+        <div class="welcome2">
+                <h2>封龙山景区</h2>
+                <h2>欢迎您的到来</h2>
+                <span class="shake"></span>
+            </div>
+    </section>
+</section>
+<!-- 首页开始 -->
+<section class="page" id="index">
+    <section class="scrollWrap">
+        <section id="tabPic">
+            <ul id="picList">
+                <li><img src="img/1.jpg" /></li>
+                <li><img src="img/2.jpg" /></li>
+                <li><img src="img/3.jpg" /></li>
+                <li><img src="img/4.jpg" /></li>
+                <li><img src="img/5.jpg" /></li>
+            </ul>
+            <section class="picMask">
+                <p>石家庄封龙山景区</p>
+                <nav>
+                    <a href="javascript:;" class="active"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </nav>
+            </section>
+        </section>
+        <!--<a href="javascript:;" class="newsBtn">
+            <em>新闻线索</em>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>-->
+        <a href="javascript:;" class="newsBtn">新闻线索</a>
+        <section id="score">
+            <h2>给景区评分</h2>
+            <ul class="scoreList">
+                <li>
+                    <span>综合印象</span>
+                    <nav>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </nav>
+                    <input type="hidden" value="0" />
+                </li>
+                <li>
+                    <span>服务指数</span>
+                    <nav>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </nav>
+                    <input type="hidden" value="0" />
+                </li>
+                <li>
+                    <span>消费指数</span>
+                    <nav>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </nav>
+                    <input type="hidden" value="0" />
+                </li>
+            </ul>
+        </section>
+        <section class="tags" id="indexTag">
+            <h2>给景区添加标签</h2>
+            <label>
+                <input type="radio" name="tags" value="服务好" />
+                <span>服务好</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="景色赞" />
+                <span>景色赞</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="千篇一律" />
+                <span>千篇一律</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="看人海" />
+                <span>看人海</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="挤爆了" />
+                <span>挤爆了</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="服务好" />
+                <span>服务好</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="景色赞" />
+                <span>景色赞</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="千篇一律" />
+                <span>千篇一律</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="看人海" />
+                <span>看人海</span>
+            </label>
+            <label>
+                <input type="radio" name="tags" value="挤爆了" />
+                <span>挤爆了</span>
+            </label>
+        </section>
+        <p class="info"></p>
+        <input type="button" value="提交" class="btn submit" />
+    </section>
+</section>
+<!-- 首页结束 -->
+<!-- 蒙板开始 -->
+<section class="page" id="mask"><h2>提交成功</h2><h2>祝您生活愉快</h2></section>
+<!-- 蒙板结束 -->
+<!-- 新闻线索开始 -->
+<section class="page" id="news">
+    <img class="news-img" src="img/news.jpg" />
+    <h2>请上传旅游投诉以及突发事件线索</h2>
+    <form class="file" enctype="multipart/form-data">
+        <label>
+            <input type="file" name="video" />
+            <span>导入视频</span>
+        </label>
+        <label>
+            <input type="file" name="file">
+            <span>上传照片</span>
+        </label>
+    </form>
+    <p class="info"></p>
+    <p class="result">上传</p>
+</section>
+<!-- 新闻线索结束 -->
+<!-- 表单提交开始 -->
+<section class="page" id="form">
+    <section class="scrollWrap">
+        <section class="tags" id="formTag">
+            <h2>给视频添/图片加标签</h2>
+            <label>
+                <input type="radio" name="tags2" value="服务好" />
+                <span>服务好</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="景色赞" />
+                <span>景色赞</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="千篇一律" />
+                <span>千篇一律</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="看人海" />
+                <span>看人海</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="挤爆了" />
+                <span>挤爆了</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="服务好" />
+                <span>服务好</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="景色赞" />
+                <span>景色赞</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="千篇一律" />
+                <span>千篇一律</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="看人海" />
+                <span>看人海</span>
+            </label>
+            <label>
+                <input type="radio" name="tags2" value="挤爆了" />
+                <span>挤爆了</span>
+            </label>
+        </section>
+        <textarea class="formText" placeholder="（选填：说点什么呢~~）" rows="5"></textarea>
+        <input type="tel" class="formText" placeholder="（选填：联系方式(电话)~~）"/>
+        <input type="button" value="上传" class="btn" />
+    </section>
+</section>
+<!-- 表单提交结束 -->
+<!-- 尾页开始 -->
+<section class="page" id="over">
+    <section class="scrollWrap">
+        <div class="scenery">
+            <img class="mountain" src="img/mountain.png" />
+            <span class="cloud"></span>
+            <span class="cloud"></span>
+            <span class="cloud"></span>
+        </div>
+        <div class="welcome2">
+            <h2>上传成功</h2>
+            <h2>感谢您的参与</h2>
+        </div>
+        <input type="button" value="重新评价" class="btn submit" />
+    </section>
+</section>
+<!-- 尾页结束 -->
+</body>
+</html>
